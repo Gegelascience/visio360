@@ -41,3 +41,11 @@ html,body {
 .textColor {
     color: #8fcaca;
 }
+
+.appTitle {
+    margin-top: 5px;
+}
+
+.fileInfo {
+    margin-top: 10px;
+}
