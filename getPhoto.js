@@ -3,6 +3,8 @@ const { Scene, Engine, ArcRotateCamera, PhotoDome, VideoDome, Color4 } = require
 
 var scene = null
 const canvas = document.getElementById('renderCanvas')
+const filenameRendering = document.getElementById('filename')
+
 const engine = new Engine(canvas, true);
 scene = createScene(engine, canvas)
 
@@ -14,6 +16,15 @@ document.getElementById('selectFile').onclick = (event) => {
 
 ipcRenderer.on('selectedPhoto', (event, photoPath, isVideo) => {
     updateScene(scene, photoPath[0], isVideo);
+
+    if (process.platform.startsWith('win')) {
+        const splitingPath = photoPath[0].split('\\')
+        filenameRendering.innerText = splitingPath[splitingPath.length - 1]
+    } else {
+        const splitingPath = photoPath[0].split('/')
+        filenameRendering.innerText = splitingPath[splitingPath.length - 1]
+    }
+
 
 })
 

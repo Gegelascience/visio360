@@ -24,4 +24,20 @@ html,body {
 .buttonSelection{
     border-radius: 2px;
     margin-bottom: 10px;
+    background-color: #8fcaca;
+    border:0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+:active, :focus, :focus-visible {
+    /*outline: 0px;*/
+    outline-color: #97c1a9;
+} 
+
+.textColor {
+    color: #8fcaca;
 }
