@@ -1,6 +1,6 @@
 {
   "name": "360viewer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple 360 viewer",
   "main": "main.js",
   "scripts": {
@@ -62,7 +62,7 @@
               "owner": "Gegelascience",
               "name": "visio360"
             },
-            "prerelease": true
+            "prerelease": false
           }
         }
       ]

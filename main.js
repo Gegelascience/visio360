@@ -48,6 +48,8 @@ ipcMain.on('selectPhoto', (event) => {
             event.reply('selectedPhoto', filePath, false)
         }
 
+    } else {
+        event.reply('abordSelection')
     }
 
 

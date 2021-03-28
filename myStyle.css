@@ -49,3 +49,14 @@ html,body {
 .fileInfo {
     margin-top: 10px;
 }
+
+.loader {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top:40%
+}
+
+.hidden {
+    display: none;
+}
